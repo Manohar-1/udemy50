@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 :root{
     --left-bg-color:rgba(186, 103, 255,0.7); 
     --right-bg-color:rgba(48, 42, 42,0.7); 
@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 body{  
-    font-family: "Roboto",sans-serif;
+    font-family: "Poppins",sans-serif;
     margin:0;  
     overflow:hidden;
     height:100vh;

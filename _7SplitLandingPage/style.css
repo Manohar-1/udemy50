@@ -22,7 +22,7 @@ h1{
     font-size: 4rem;
     position:absolute; 
     left:50%; 
-    top:20%; 
+    top:15%; 
     color:#fff; 
     white-space: nowrap;
     transform:translateX(-50%);
@@ -118,4 +118,10 @@ h1{
 } 
 .hover-right .right{
     width:var(--hover-width); 
+}
+
+@media (max-width:800px){
+    h1{
+        font-size: 2rem;
+    }
 }

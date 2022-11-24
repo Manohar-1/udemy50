@@ -10,7 +10,7 @@
 
 6.Scrolling Animation     ---------->https://beautiful-horse-e9ba78.netlify.app/
 
-8.Split Landing Page      ---------->https://wonderful-kelpie-2f233a.netlify.app/
+7.Split Landing Page      ---------->https://wonderful-kelpie-2f233a.netlify.app/
 
 9.Sound Board             ---------->https://calm-chebakia-13e03c.netlify.app/
 

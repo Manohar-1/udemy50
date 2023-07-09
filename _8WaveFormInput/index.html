@@ -13,15 +13,26 @@
      <h1>Please Login</h1> 
      <form> 
         <div class="form-control"> 
-           <input type="email"> 
-           <label for="">Email</label>
+           <input type="text" required> 
+           <label for="">Email</label> 
+
+           <!-- 
+            Using JavaScript, we're going to convert the above label to label below like this...
+            <label >
+              <span style="transition-delay: 0ms">E</span>
+              <span style="transition-delay: 0ms">m</span>
+              <span style="transition-delay: 0ms">a</span>
+              <span style="transition-delay: 0ms">i</span>
+              <span style="transition-delay: 0ms">l</span>
+           </label> -->
+
         </div>
         <div class="form-control">
-           <input type="password"> 
+           <input type="password" required> 
            <label for="">Password</label>
         </div> 
         <button class="btn">Login</button> 
-        <p class="text">Don't have an account? <a href="#">Sign Up</a></p>
+        <p class="text">Don't have an account? <a href="#">Register</a></p>
      </form>
    </div>
 </body>

@@ -8,7 +8,7 @@ body{
     font-family: "Muli",sans-serif;
     background-color: steelblue;
     display: flex;  
-    /* flex-direction: column;  */
+    flex-direction: column;
     margin:0;  
     align-items: center; 
     justify-content:center; 
@@ -21,14 +21,15 @@ body{
     color:#fff; 
     padding:20px 40px; 
     border-radius:5px;
+    width: 320px;
 } 
 
 .container h1{
     text-align: center; 
-    margin-bottom:30px;
+    
 } 
 
-.container button{
+.btn{
     cursor:pointer;
     padding:10px;  
     display: inline-block;
@@ -43,15 +44,11 @@ body{
 
 .form-control{
     position: relative; 
-    margin:40px 0px;
+    margin:80px 0px;
+    /* border:1px solid red; */
 }
 
-.form-control label{
-    position: absolute; 
-    top:5px; 
-    left:0px; 
-    margin-bottom: 30px;
-}
+
 
 .form-control input{ 
     background-color: transparent; 
@@ -59,52 +56,50 @@ body{
     border-bottom:1px solid #fff; 
     display: block; 
     width: 100%; 
-    
-    font-size: 20px;
+    font-size: 13px;
     color:#fff;    
+    
 } 
 
-.form-control label span{
-    /* position: absolute;  
-    display: inline-block;
-    font-size: 18px; 
-    min-width:5px; */
-}
-
-.form-control input:focus,.form-control input:valid{
-    outline:0; 
+.form-control input:focus,
+.form-control input:valid{
+    outline: 0; 
+    color:lightblue;
     border-bottom-color:lightblue;
 }
 
-.form-control input:focus +label span,.form-control input:valid + label span{
-    color:lightblue; 
-    transform: translateY(30px);
-}
-
-.text{
-    margin:30px 0px;
-}
 
 
-.text a{
-    text-decoration: none; 
+
+
+.form-control label{
+    position: absolute; 
+    top:0px; 
+    left:0px; 
+    
+    /* pointer-events: none; */
     
 }
 
-
- 
-
-.btn:focus{
-    outline: 0;
+.form-control label span{
+    display: inline-block;
+    font-size: 14px; 
+    /* min-width: 5px;  */
+    transition:0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-
-.btn:active{
-    transform: scale(0.99);
+.form-control input:focus+label span,
+.form-control input:valid+label span{
+    outline: 0; 
+    color:lightblue;
+    transform:translateY(-30px);
 }
 
+.text{
+    text-align: center;
+}
 
- 
-
-
-
+.text a{
+    text-decoration: none;
+    color:lightblue
+}

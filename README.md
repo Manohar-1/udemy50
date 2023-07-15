@@ -11,7 +11,7 @@
 |9            |Sound Board    |https://calm-chebakia-13e03c.netlify.app/|
 |10            |Dad Jokes    |https://magnificent-shortbread-9ae5df.netlify.app/|
 |11            |EventKeyCode   |https://celadon-gnome-d67bd8.netlify.app/|
-|12            |Expanding Cards   |https://64b28f9eb4ec057de5d6c0e1--merry-tapioca-338055.netlify.app/|
+|12            |FAQ            |https://64b28f9eb4ec057de5d6c0e1--merry-tapioca-338055.netlify.app/|
 
 
 

@@ -1,0 +1,39 @@
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-color: rgb(164, 67, 164); 
+    color:white;
+    
+    
+  } 
+
+  .counter-container{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center;
+    margin: 15px 40px;
+  }
+
+  .counter{
+    font-size:60px; 
+    margin-top:10px;
+  }
+
+  @media (max-width:580px){
+      body{
+        flex-direction: column;
+      }
+      .counter-container{
+        margin:30px 10px;
+      }
+  }

@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :root{
+    --border-color:#144fc6;
+    --fill-color:#6ab3f8;
+  }
+
+  body {
+    background-color: #3494e4; 
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    /* Why? */
+    margin-bottom:40px; 
+  }
+
+
+  h1{
+    margin:10px 0 0; 
+  }
+
+  h3{
+    font-weight: 400; 
+    margin:10px 0px; 
+  }
+
+  .cup{
+    background-color: #fff; 
+    border:4px solid var(--border-color); 
+    color:var(--border-color);
+    border-radius:0 0 40px 40px; 
+    height:350px; 
+    width:150px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin:10px 0px; 
+    overflow: hidden;
+  }
+
+  .cup.cup-small{
+    height:100px; 
+    width:60px; 
+    cursor:pointer; 
+    border-radius: 0 0 20px 20px;
+    margin:5px; 
+    transition: 0.3s ease;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  
+   .cup.cup-small.full{
+    background-color: var(--fill-color); 
+    color:#fff;
+   }
+
+  .cups{
+    display:flex; 
+    flex-wrap: wrap; 
+    width:300px; 
+    margin:auto;
+  }
+
+
+  #remained{
+    display:flex;  
+    flex-direction:column; 
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    flex:1;  
+  } 
+
+  .remained span{
+    font-size: 2rem; 
+    font-weight: bold;
+  }
+
+  #percentage{
+    background-color: var(--fill-color); 
+    font-size: 2rem; 
+    font-weight: bold;
+    flex:0;
+    width: 100%;
+    display:flex; 
+    justify-content: center;
+    align-items: center; 
+    transition: 0.1s ease-out;
+  }

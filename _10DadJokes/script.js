@@ -1,6 +1,7 @@
 const JokeBtn=document.getElementById("jokeBtn") 
 const joke=document.getElementById("joke") 
 
+console.log(JokeBtn);
 
 
 JokeBtn.addEventListener('click',()=>{

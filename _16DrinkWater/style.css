@@ -43,6 +43,7 @@
     align-items: center;
     margin:10px 0px; 
     overflow: hidden;
+    transition: 0.3s ease;
   }
 
   .cup.cup-small{
@@ -79,13 +80,17 @@
     justify-content: center; 
     text-align: center;
     flex:1;  
+    transition: 0.1s ease;
   } 
 
   .remained span{
-    font-size: 2rem; 
+    font-size: 1.5rem; 
     font-weight: bold;
   }
-
+ 
+  .remained small{
+    font-size:14px;
+  }
   #percentage{
     background-color: var(--fill-color); 
     font-size: 2rem; 
@@ -95,5 +100,5 @@
     display:flex; 
     justify-content: center;
     align-items: center; 
-    transition: 0.1s ease-out;
+    transition: 0.1s ease;
   }

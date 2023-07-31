@@ -43,7 +43,8 @@
     align-items: center;
     margin:10px 0px; 
     overflow: hidden;
-    transition: 0.3s ease;
+    transition: 0.3s ease; 
+    user-select: none;
   }
 
   .cup.cup-small{
@@ -93,7 +94,7 @@
   }
   #percentage{
     background-color: var(--fill-color); 
-    font-size: 2rem; 
+    font-size: 1.5rem; 
     font-weight: bold;
     flex:0;
     width: 100%;

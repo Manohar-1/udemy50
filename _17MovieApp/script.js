@@ -31,7 +31,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault(); 
 
   loader.style.display="block";
-  loader.style.opacity=1; 
+  loader.style.opacity=1;   
   setTimeout(()=>{
       loader.style.opacity=0;  
       loader.style.display="none";

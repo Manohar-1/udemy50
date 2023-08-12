@@ -25,12 +25,24 @@ function setTime(){
     const month = time.getMonth(); 
     const day = time.getDay(); 
     const hours = time.getHours(); 
-
+    const date = time.getDate()
     const hoursForClock = hours % 12; 
     minutes = time.getMinutes(); 
     seconds = time.getSeconds(); 
-
-    hourEl.computedStyleMap.transform = `translate(-50%,-100%) rotate()`
+    console.log(month+" "+day+" "+hours+" "+minutes+" "+seconds);
+    
+    hourEl.style.transform = `translate(-50%, -100%) rotate(${scale(hoursForClock,0,11,0,359)}deg)` 
+    minuteEl.style.transform = `translate(-50%, -100%) rotate(${scale(minutes,0,59,0,359)}deg)`  
+    secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(seconds,0,59,0,359)}deg)` 
+    
+    timeEl.innerText = hoursForClock+":"+((minutes<10)?("0"+minutes):minutes)+((hours>=12)?"PM":"AM");
+    dateEl.innerHTML = `${days[day]},${months[month]}<span class="circle">${date}</span>`
 }
 
-setTime();
+const scale  = (num,in_min,in_max,out_min,out_max)=>{
+  return (num-in_min)*(out_max-out_min)/(in_max-in_min) + out_min;
+}
+
+setInterval(()=>{
+  setTime();
+},1000 );

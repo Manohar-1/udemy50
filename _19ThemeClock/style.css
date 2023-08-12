@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Poppins:wght@300&family=Roboto&family=Roboto+Condensed:wght@300&family=Roboto+Mono:ital,wght@0,200;0,700;1,100;1,500&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -67,19 +66,20 @@ body {
   height: 65px;
   width: 3px;
   transform-origin: bottom center;
+  transition:all 0.1s;
 }
 
 .needle.hour {
-  transform: translate(-50%, -100%) rotate(0deg);
+  /* transform: translate(-50%, -100%) rotate(0deg); */
 }
 
 .needle.minute {
-  transform: translate(-50%, -100%) rotate(0deg);
+  /* transform: translate(-50%, -100%) rotate(0deg); */
   height: 100px;
 }
 
 .needle.second {
-  transform: translate(-50%, -100%) rotate(0deg);
+  /* transform: translate(-50%, -100%) rotate(0deg); */
   height: 100px;
   background-color: #e74c3c;
 }
@@ -112,16 +112,14 @@ body {
 }
 
 .date {
-  color: #aaa; 
+  color: #aaa;
   font-size: 14px;
   letter-spacing: 0.3px;
-  text-transform: uppercase;  
-  position:relative
-  
+  text-transform: uppercase;
+  position: relative;
 }
 
-.date .circle { 
-
+.date .circle {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 50%;

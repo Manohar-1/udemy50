@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Poppins:wght@300&family=Roboto&family=Roboto+Condensed:wght@300&family=Roboto+Mono:ital,wght@0,200;0,700;1,100;1,500&display=swap");
+
+
 * {
   box-sizing: border-box;
 }
@@ -66,7 +68,7 @@ body {
   height: 65px;
   width: 3px;
   transform-origin: bottom center;
-  transition:all 0.1s;
+  transition: all 0.1s;
 }
 
 .needle.hour {

@@ -19,22 +19,24 @@ function dragStart() {
 }
 
 function dragEnd() {
-  this.className = "empty";
+  this.className = "fill";
 }
 
 function dragOver(e) {
   e.preventDefault(); 
-  this.className+=" hovered";
+  
 }
 
 function dragEnter(e) {
   e.preventDefault();
+  this.className+=" hovered";
 }
 
 function dragLeave() { 
-  this.className="empty";
+  this.className = "empty"
 }
 
 function dragDrop() {
-  this.className = "fill"
+  this.className="empty"; 
+  this.append(fill);
 }

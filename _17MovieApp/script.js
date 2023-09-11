@@ -1,3 +1,13 @@
+
+function preLoading(){
+  loader.style.opacity=1;   
+  setTimeout(()=>{
+      loader.style.opacity=0;  
+      loader.style.display="none";
+  },2500);
+}
+
+
 const API_URL =
   "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=1809f52f62ad56fe9ba1726426ee75df&page=1";
 const IMG_URL = "https://image.tmdb.org/t/p/w1280";
@@ -6,17 +16,9 @@ const SEARCH_URL =
 
 let form = document.getElementById("form");
 let search = document.getElementById("search");
-
-// const searchInput = document.getElementById("search");
 const loader = document.getElementById("loader");
 
-// searchInput.addEventListener('keydown',(e)=>{
-//     e.preventDefault(); 
-//     if(e.key=="Enter"){
-        
-       
-//     }
-// })
+
 
 
 getMovies(API_URL);

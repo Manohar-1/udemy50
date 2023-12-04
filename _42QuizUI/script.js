@@ -51,7 +51,9 @@ loadQuiz();
 
 function loadQuiz() {
   const currentQuizData = quizData[currentQuiz];
-  questionEl.innerText = currentQuizData.question;
+  questionEl.innerText = currentQuizData.question; 
+
+  deselectAnswers();
 
   a_text.innerText = currentQuizData.a;
   b_text.innerText = currentQuizData.b;
